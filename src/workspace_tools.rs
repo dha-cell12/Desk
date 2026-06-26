@@ -692,7 +692,7 @@ fn search_text_grep(
             .arg("-n")
             .arg("-I")
             .arg("-m")
-            .arg(file_match_limit.to_string());
+            .arg((file_match_limit + 1).to_string());
         if options.fixed_strings {
             command.arg("-F");
         } else {

@@ -87,3 +87,10 @@ jobs:
             --title "${GITHUB_REF_NAME}" \
             --notes "CatDesk ${GITHUB_REF_NAME}" \
             --verify-tag
+
+      - name: Publish to NPM
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          npm config set //registry.npmjs.org/:_authToken "${NODE_AUTH_TOKEN}"
+          npm publish --access public

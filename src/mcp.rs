@@ -17,7 +17,7 @@ use crate::state::{
 };
 use crate::workspace_tools;
 
-const SERVER_NAME: &str = "catdesk";
+const SERVER_NAME: &str = "Hoadev";
 const SERVER_VERSION: &str = "4.0.0";
 const PROTOCOL_VERSION: &str = "2025-03-26";
 const UI_TEMPLATE_URI: &str = "ui://widget/catdesk-dashboard.html";
